@@ -3,11 +3,12 @@ package com.company;
 public class Warmup1 {
 
     public static void main(String[] args) {
-            sleepIn(false, true);
-            parrotTrouble(false, 6);
-            monkeyTrouble(true, false);
-            icyHot(2, 120);
-            startHi("hi there");
+        //sleepIn(false, true);
+        //nearHundred(45);
+        //parrotTrouble(false, 6);
+        //monkeyTrouble(true, false);
+        //icyHot(2, 120);
+        startHi("hi there");
     }
 
 
@@ -24,6 +25,22 @@ public class Warmup1 {
         } else {
             System.out.println("true");
             return true;
+        }
+    }
+
+    /* nearHundred
+    Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.
+    nearHundred(93) → true
+    nearHundred(90) → true
+    nearHundred(89) → false*/
+
+    public static boolean nearHundred(int n) {
+        if ((n >= 90 && n <= 110) || (n >= 190 && n <= 210)) {
+            System.out.println("true");
+            return true;
+        } else {
+            System.out.println("false");
+            return false;
         }
     }
 
@@ -82,7 +99,7 @@ public class Warmup1 {
     startHi("hello hi") → false*/
 
     public static boolean startHi(String str) {
-        if (str.startsWith ("hi")) {
+        if (str.startsWith("hi")) {
             System.out.println("true");
             return true;
         } else {
@@ -90,7 +107,5 @@ public class Warmup1 {
             return false;
         }
     }
-
-
 
 }
